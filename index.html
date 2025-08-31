@@ -1,40 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title> Group leaders & members be like </title>
-	<meta name="author" content="Clint Lorenzo">
-	<style>
-		body {
-			background-color:antiquewhite;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		}
-		.S1 {
-			width: 600px;
-			display: flex;
-			justify-content: space-around;
-		}
-		div img  {
-			width: 200px;
-			height: 200px;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group leaders & members be like</title>
+  <meta name="author" content="Clint Lorenzo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: antiquewhite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .S1 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .S1 img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .S2 {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .S2 i {
+      font-size: 1.5rem;
+      color: #e74c3c;
+      margin-left: 8px;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 480px) {
+      .S2 {
+        font-size: 1rem;
+      }
+      .S1 img {
+        max-width: 180px;
+      }
+    }
+  </style>
 </head>
 <body>
-	<div>
-		<div class="S1">
-			<img src="cart1.png">
-			<img src="cart2.png">
-		</div>
-		<div class="S2">
-			<h2>
-				Wa kay ambag sa groupings >:-( 
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-				meanwhile me:
-			</h2> 
-		</div>
-	</div>
+  <div class="container">
+    <div class="S1">
+      <img src="cart1.png" alt="lazy member">
+      <img src="cart2.png" alt="hardworking leader">
+    </div>
+    <div class="S2">
+      Wa kay ambag sa groupings >:-( <i class="fa-solid fa-face-angry"></i><br>
+      meanwhile me: <i class="fa-solid fa-face-tired"></i>
+    </div>
+  </div>
 </body>
 </html>
